@@ -1,0 +1,14 @@
+MYSQL QUERY =>
+SELECT ven.idCliente as customer_id, count(nven.idProducto) , nven.idProducto as item_id FROM Venta as ven JOIN NotaVenta as nven ON(ven.id =nven.idVenta) WHERE DATE_FORMAT(ven.fechaProgRecibido, '%y %m %d') >= DATE_FORMAT('2013-11-01', '%y %m %d') AND DATE_FORMAT(ven.fechaProgRecibido, '%y %m %d') <= DATE_FORMAT('2013-12-31', '%y %m %d') Group by ven.idCliente, nven.idProducto
+
+
+###################3
+
+
+SELECT  count(idProducto) FROM `notaventa` WHERE `idVenta`=35
+
+
+SELECT  DISTINCT(ven.idCliente), ven.id as ventaId  FROM Venta as ven 
+WHERE DATE_FORMAT(ven.fechaProgRecibido, '%y %m %d') >= DATE_FORMAT('2013-11-01', '%y %m %d') AND DATE_FORMAT(ven.fechaProgRecibido, '%y %m %d') <= DATE_FORMAT('2013-12-31', '%y %m %d') GROUP BY ven.idCliente order by ventaId ASC 
+
+SELECT  idVenta ,  count(idProducto) as countno , idProducto  FROM notaventa WHERE idVenta = 35 Group by idProducto limit 2

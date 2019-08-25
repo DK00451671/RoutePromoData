@@ -1,0 +1,36 @@
+info 
+
+https://developers.google.com/maps/articles/phpsqlsearch_v3
+
+https://developers.google.com/maps/documentation/javascript/examples/marker-simple?csw=1
+
+
+
+to get lat and long :
+
+http://www.latlong.net/
+
+to check poing is in side ploygon or not 
+
+http://www.counsellingbyabhi.com/2013/01/google-map-check-whether-point-latlong.html
+
+#############
+
+
+Attached  you will find documents for this new project "Share Route". 
+
+Requirement-Share-Route__appv1.0.pdf
+Mockups of the app
+
+ShareRouteApp Flow [eng](3).png
+Flow diagram of the app, it show on a grey arrow box Web Services
+
+WS-ShareRoute.pdf
+Description document for web service, input and output 
+
+Database-Storage-Routes.png
+Database structure to storage routes (please, let's argue this part)
+
+Diagrama_OTU_Cliente.pdf    (Spanish)
+This is actual database structure  
+

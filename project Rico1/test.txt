@@ -1,0 +1,22 @@
+[9:18:01 PM] Khanter: you want  TOP 20 most consumed items from a customer for the last 2 months.
+[9:20:19 PM] Khanter: I/P :
+[9:20:21 PM] Khanter: {
+"PRO":{
+"fun":"obtenerCSVproductosFrec",
+"txtUser":"123",
+"md5Passwd":"123"
+}
+}
+ Khanter: and out put is
+ Khanter: List of top 20 items
+[9:20:42 PM] Khanter: idCustomer,idItem
+
+okay you mean i can use idCliente as a customerID from venta table
+ and IdItem from notaventa table
+ 
+ 
+ if i consider current month is Dec then you want result Nov and Oct month. 
+ 
+ SELECT ven.idCliente FROM 
+ 
+ $query = "SELECT ven.idCliente FROM Venta as ven ,  WHERE ;

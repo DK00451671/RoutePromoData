@@ -1,0 +1,42 @@
+Hola Dinesh,
+
+I have this url to test web services:
+http://otu-srv.dyndns.ws/otu_app_srv/
+
+user:        dinesh
+passwd:   test_test
+
+I setup a server to test database and web services.
+You can access to manage MYSQL database 
+http://otu-srv.dyndns.ws/phpmyadmin
+
+I config a repository to track changes of the source code. 
+It is a GIT repository.
+Please let me know if you have working with this type of repository.
+
+I need for you a pub rsa key to give you access to repository via SSH.
+You will need to install git on your machine and then generate RSA key.
+
+
+Steps for get repo are :
+
+1) install ssh on your machine (when you install git, ssh are installed too)
+2) generate rsa key (public and private )   help generar_rsa   (do not use passphrase )
+3) move private key to  %HOME%/.ssh/id_rsa
+4) send me by email id_rsa.pub for add it on server 
+
+For use repo:
+
+git clone ssh://dinesh@otu-srv.dyndns.ws/otu_app_srv.git
+
+
+git add *                                                                o     git add --all        
+git commit -m "text to describe changes"
+git push
+
+NOTE: just first push you must sent it like: git push -u origin master 
+           then you can use git push 
+
+
+
+git clone ssh://dinesh@otu-srv.dyndns.ws/otu_app_srv.git
